@@ -1,6 +1,6 @@
 <x-app-layout>
     <article class="mt-6">
-        <p class="text-2xl font-bold hover:text-blue-300">{{ $post->title }}</p>
+        <p class="text-2xl font-bold">{{ $post->title }}</p>
         <p class="mt-2 text-sm font-light opacity-50">{{ $post->created_at->format('F jS, Y') }}</p>
         <div class="mt-4 leading-relaxed body">
             <x-markdown>

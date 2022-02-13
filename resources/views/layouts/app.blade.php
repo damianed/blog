@@ -13,7 +13,7 @@
             <x-header></x-header>
 
             <!-- Page Content -->
-            <main class="w-full px-6 mx-auto lg:px-0 lg:w-1/3">
+            <main class="w-full px-6 mx-auto lg:px-0 lg:w-2/3 xl:w-1/3">
                 {{ $slot }}
             </main>
         </div>
