@@ -33,6 +33,6 @@
             </main>
         </div>
         <script src="{{ asset('js/app.js') }}" defer></script>
-        {{ $scripts }}
+        @yield('scripts')
     </body>
 </html>
