@@ -22,6 +22,7 @@ class BlogPostFactory extends Factory
             'body' => $this->faker->paragraph(10),
             'slug' => $this->faker->slug(),
             'user_id' => User::factory(),
+            'is_published' => $this->faker->boolean()
         ];
     }
 }

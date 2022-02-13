@@ -23,6 +23,8 @@ Route::middleware(['auth'])->prefix('dashboard')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
     Route::get('/post/new', [BlogPostController::class, 'create'])->middleware(['auth'])->name('post.new');
     Route::post('/post/new', [BlogPostController::class, 'store'])->middleware(['auth'])->name('post.create');
+    Route::get('/post/{post}/edit', [BlogPostController::class, 'edit'])->middleware(['auth'])->name('post.edit');
+    Route::post('/post/{post}/edit', [BlogPostController::class, 'update'])->middleware(['auth'])->name('post.update');
     Route::get('/post/{post}/delete', [BlogPostController::class, 'destroy'])->middleware(['auth'])->name('post.delete');
 });
 

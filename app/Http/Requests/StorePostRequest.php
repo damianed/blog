@@ -16,6 +16,7 @@ class StorePostRequest extends FormRequest
         return [
             'title' => 'required|unique:blog_posts|max:255',
             'body' => 'required',
+            'is_published' => 'string',
         ];
     }
 }

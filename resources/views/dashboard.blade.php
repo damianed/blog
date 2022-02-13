@@ -21,7 +21,7 @@
                         <div class="flex flex-row justify-between mt-5">
                             <div>{{$post->title}}</div>
                             <div class="flex flex-row space-x-5">
-                                <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">Edit</button>
+                                <a class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700" href="{{ route('post.edit', $post->id) }}" >Edit</a>
                                 <a class="px-4 py-2 font-bold text-white bg-red-500 rounded hover:bg-red-700" href="{{ route('post.delete', $post) }}">Delete</a>
                             </div>
                         </div>
