@@ -20,7 +20,7 @@
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                     <label for="body">Body</label>
-                    <textarea name="body">{{ @old('body') }}</textarea>
+                    <textarea name="body" id="body">{{ @old('body') }}</textarea>
                     <div class="mb-2 grid justify-items-end">
                         <div class="flex">
                             <button type="submit" class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700" href="dashboard/post/new">Save</a>
@@ -32,5 +32,4 @@
     </div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-    <script src="{{ asset('js/dashboard/post_edit.js') }}" defer></script>
 </x-dashboard-layout>
