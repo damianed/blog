@@ -22,7 +22,7 @@ Route::get('/blog/{post:slug}', [BlogPostController::class, 'show'])->name('post
 Route::middleware(['auth'])->prefix('dashboard')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
     Route::get('/post/new', [BlogPostController::class, 'create'])->middleware(['auth'])->name('post.new');
-    Route::put('/post/new', [BlogPostController::class, 'store'])->middleware(['auth'])->name('post.create');
+    Route::post('/post/new', [BlogPostController::class, 'store'])->middleware(['auth'])->name('post.create');
     Route::get('/post/{post}/delete', [BlogPostController::class, 'destroy'])->middleware(['auth'])->name('post.delete');
 });
 
