@@ -46,7 +46,10 @@ class BlogPostController extends Controller
 
     function update(Request $request, BlogPost $post)
     {
-        $post->fill($request->all())->save();
+        $post->title = $request->title;
+        $post->body = $request->body;
+        $post->is_published = $request->is_published;
+        $post->save();
         return redirect()->route('post.show', [$post]);
     }
 
