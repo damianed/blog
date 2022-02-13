@@ -33,5 +33,6 @@
             </main>
         </div>
         <script src="{{ asset('js/app.js') }}" defer></script>
+        {{ $scripts }}
     </body>
 </html>

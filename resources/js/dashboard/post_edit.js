@@ -1,3 +1,1 @@
-import SimpleMDE from "simplemde";
-
-var simplemde = new SimpleMDE({ element: document.getElementById('body') });
+var easyMDE = new window.EasyMDE({ element: document.getElementById('body') });
