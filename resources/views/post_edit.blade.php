@@ -31,5 +31,5 @@
         </div>
     </div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
-    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="{{ asset('js/dashboard/post_edit.js') }}" defer></script>
 </x-dashboard-layout>
