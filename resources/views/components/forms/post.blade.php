@@ -1,6 +1,6 @@
 @props(['route' => '#', 'post' => ['title' => '', 'body' => '', 'is_published' => null]])
 
-<form method="POST" action="{{ $route }}" class="p-6 bg-white border-b border-gray-200">
+<form method="POST" action="{{ $route }}" class="p-6 bg-white border-b border-gray-200" target="_blank">
     @csrf
     @error('title')
     <div class="alert alert-danger">{{ $message }}</div>
