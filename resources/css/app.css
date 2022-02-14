@@ -10,6 +10,11 @@
     color: #FFFFFF;
 }
 
+.markdown img {
+    color: #FFFFFF;
+    width: 100%;
+}
+
 .markdown p > code {
     border-radius: 2px;
     border: #6f6f6f 1px solid;
@@ -17,7 +22,7 @@
     background: #000;
 }
 
-.markdown .shiki .code {
+.markdown .shiki {
     overflow: scroll
 }
 .markdown code > .line {
