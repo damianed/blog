@@ -26,5 +26,5 @@
 </form>
 @section('scripts')
     <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
-    <script src="{{ asset('js/dashboard/post_edit.js') }}" defer></script>
+    <script src="{{ mix('js/dashboard/post_edit.js') }}" defer></script>
 @endsection

@@ -16,3 +16,7 @@ mix.js('resources/js/app.js', 'public/js').js('resources/js/dashboard/post_edit.
     require('tailwindcss'),
     require('autoprefixer'),
 ]);
+
+if (mix.inProduction()) {
+    mix.version()
+}
